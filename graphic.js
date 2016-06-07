@@ -1,4 +1,4 @@
-$(function()){
+$(function(){
   var data = [
 	{ label: "Series1",  data: 10},
 	{ label: "Series2",  data: 30},
@@ -8,8 +8,9 @@ $(function()){
 	{ label: "Series6",  data: 110}
   ];
 
-  var graphics = $("#graphics");
-  $.plot(placeholder, data, {
+  var graphics = $("#pie-chart");
+  
+  $.plot(graphics, data, {
     series: {
 	  pie: { 
 	    show: true
@@ -17,4 +18,4 @@ $(function()){
 	}
   });
 
-};
+});
